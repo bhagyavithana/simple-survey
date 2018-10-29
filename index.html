@@ -17,6 +17,17 @@
                     <img src="./image.jpg" alt="logo" />
                 </div>
               <div class="right_txt">
+		      
+		      
+		       <p>
+        <label> {{ field1.label_tag }}
+            {% if field1.field.required %}
+            <span class="required-field">*Required</span>
+            {% endif %}
+        </label>
+        &nbsp;&nbsp;&nbsp; {{ field1 }} <br />
+        { field1.errors }}
+    </p>
                 PwC Survey 
               </div>
               
